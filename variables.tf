@@ -1,17 +1,18 @@
-variable "location" {
-  default = "East US"
-}
-
 variable "resource_group_name" {}
+variable "location" { default = "East US" }
+
 variable "vnet_name" {}
+variable "vnet_address_space" {}
 variable "subnet_name" {}
+variable "subnet_prefix" {}
+
 variable "nsg_name" {}
+variable "public_ip_name" {}
+variable "nic_name" {}
 variable "vm_name" {}
+variable "vm_size" {}
+
 variable "admin_username" {}
 variable "admin_password" {
   sensitive = true
 }
-variable "vm_size" {
-  default = "Standard_B1s"
-}
-
