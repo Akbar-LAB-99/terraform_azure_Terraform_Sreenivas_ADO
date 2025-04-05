@@ -1,10 +1,3 @@
-output "vnetname" {
-  value = azurerm_virtual_network.main.name
+output "vm_public_ip" {
+  value = azurerm_public_ip.public_ip.ip_address
 }
-output "vnet_address_space" {
-    value = azurerm_virtual_network.main.address_space
-}
-output "vnet_location" {
-    value = azurerm_virtual_network.main.location
-}
-
