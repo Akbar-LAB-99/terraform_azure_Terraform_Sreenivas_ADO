@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "terraform"
-    storage_account_name = "terraform761"
-    container_name       = "tfstate"
+    resource_group_name  = "crif"
+    storage_account_name = "terraformcrif"
+    container_name       = "tfstatecrif"
     key                  = "default.terraform.tfstate"
   }
 }
